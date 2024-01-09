@@ -38,7 +38,7 @@ class App(customtkinter.CTk):
         self.geometry(f"{App.WIDTH}x{App.HEIGHT}")
         self.resizable(0,0)
         self.protocol("WM_DELETE_WINDOW", self.on_closing)  # call .on_closing() when app gets closed
-        #self.iconbitmap("VisyraNetwork.ico")
+        self.iconbitmap("Logo.ico")
 
         global x
         x = threading.Thread(target=self.refresh)
